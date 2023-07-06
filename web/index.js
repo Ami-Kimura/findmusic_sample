@@ -1,4 +1,5 @@
 require('dotenv').config();
+const port = process.env.PORT || 3000;
 const express = require('express'); // expressモジュールを読み込む
 const request = require('request'); // requestモジュールを読み込む
 const cors = require('cors'); // corsモジュールを読み込む
@@ -50,6 +51,6 @@ app.get('/list', (req, res) => { // /listというものが含まれていると
   });
 });
 
-//3000というポート番号（サーバー）に表示させる
-console.log('Listening on 3000');
-app.listen(3000);
+
+console.log(`Listening on ${port}`);
+app.listen(port);
