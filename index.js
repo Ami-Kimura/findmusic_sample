@@ -1,4 +1,3 @@
-const port = process.env.PORT || 3000;
 const express = require('express'); 
 const request = require('request'); 
 const cors = require('cors'); 
@@ -49,5 +48,5 @@ app.get('/list', (req, res) => {
 });
 
 
-console.log(`Listening on ${port}`);
-app.listen(port);
+console.log(`Listening on 3000`);
+app.listen(3000);
